@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos2zmb",
+    "Slug": "hdac1-inh",
+    "Status": "In progress",
+    "Title": "Inhibition of HDAC1",
+    "Description": "Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. Dataset is composed of all available pIC50 values from ChEMBL target 325",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,12 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "HIV",
+        "Human",
+        "HDAC1"
+    ],
+    "Publication": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL325/",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0"
 }
