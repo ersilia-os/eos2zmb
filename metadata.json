@@ -1,7 +1,7 @@
 {
     "Identifier": "eos2zmb",
     "Slug": "hdac1-inh",
-    "Status": "In progress",
+    "Status": "Ready",
     "Title": "Inhibition of HDAC1",
     "Description": "Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325, and the model has been developed using Ersilia's LazyQsar package (MorganBinaryClassifier)",
     "Mode": "In-house",
@@ -18,7 +18,7 @@
     "Output Type": [
         "Float"
     ],
-    "Output Shape": "Single",
+    "Output Shape": "List",
     "Interpretation": "Probability of inhibition of HDAC1 at cut-offs pIC50 7 (0.1uM) and 8 (10nM)",
     "Tag": [
         "HIV",

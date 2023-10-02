@@ -14,7 +14,7 @@ Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV la
 * Task: `Classification`
 * Output: `Probability`
 * Output Type: `Float`
-* Output Shape: `Single`
+* Output Shape: `List`
 * Interpretation: Probability of inhibition of HDAC1 at cut-offs pIC50 7 (0.1uM) and 8 (10nM)
 
 ## References
