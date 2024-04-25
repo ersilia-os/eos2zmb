@@ -26,7 +26,7 @@ Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV la
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos2zmb)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos2zmb) (AMD64, ARM64)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos2zmb) (AMD64)
 
 ## Citation
 
