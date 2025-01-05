@@ -1,0 +1,3 @@
+name,type,direction,description
+hdac1_pic50_7,float,high,Classification score of HDAC1 inhibition based on a pIC50 cutoff of 7
+hdac1_pic50_8,float,high,Classification score of HDAC1 inhibition based on a pIC50 cutoff of 8
