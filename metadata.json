@@ -1,24 +1,29 @@
 {
     "Identifier": "eos2zmb",
-    "Slug": "hdac1-inh",
+    "Slug": "hdac1-inhibition",
     "Status": "Ready",
     "Title": "Inhibition of HDAC1",
-    "Description": "Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325, and the model has been developed using Ersilia's LazyQsar package (MorganBinaryClassifier)",
-    "Mode": "In-house",
-    "Task": [
-        "Classification"
-    ],
+    "Description": "Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325, and the model has been developed using Ersilia's LazyQsar package (MorganBinaryClassifier)\n",
+    "Source": "Local",
+    "Source Type": "Internal",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Cancer",
+        "AIDS"
+    ],
+    "Target Organism": [
+        "Homo sapiens"
+    ],
     "Output": [
-        "Probability"
+        "Score"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "List",
+    "Output Dimension": 2,
+    "Output Consistency": "Fixed",
     "Interpretation": "Probability of inhibition of HDAC1 at cut-offs pIC50 7 (0.1uM) and 8 (10nM)",
     "Tag": [
         "HIV",
@@ -26,11 +31,18 @@
         "HDAC1"
     ],
     "Publication": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL325/",
+    "Publication Type": "Other",
+    "Publication Year": 2023,
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
-    "License": "GPL-3.0",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip",
+    "License": "GPL-3.0-or-later",
+    "Contributor": "GemmaTuron",
+    "Incorporation Date": "2023-09-27",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2zmb",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip",
+    "Deployment": [
+        "Local"
     ]
 }
