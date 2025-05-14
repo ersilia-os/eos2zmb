@@ -3,22 +3,18 @@
     "Slug": "hdac1-inhibition",
     "Status": "Ready",
     "Title": "Inhibition of HDAC1",
-    "Description": "Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325, and the model has been developed using Ersilia's LazyQsar package (MorganBinaryClassifier)\n",
+    "Description": "Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325, and the model has been developed using Ersilias LazyQsar package (MorganBinaryClassifier)",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "Internal",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "Cancer",
-        "AIDS"
-    ],
-    "Target Organism": [
-        "Homo sapiens"
-    ],
     "Output": [
         "Score"
     ],
@@ -30,19 +26,25 @@
         "Human",
         "HDAC1"
     ],
-    "Publication": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL325/",
+    "Biomedical Area": [
+        "Cancer",
+        "AIDS"
+    ],
+    "Target Organism": [
+        "Homo sapiens"
+    ],
     "Publication Type": "Other",
     "Publication Year": 2023,
+    "Publication": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL325/",
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
     "License": "GPL-3.0-or-later",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-09-27",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2zmb",
     "Docker Architecture": [
         "AMD64"
     ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip",
-    "Deployment": [
-        "Local"
-    ]
+    "Model Size": 4.0,
+    "Environment Size": 7386.0
 }
