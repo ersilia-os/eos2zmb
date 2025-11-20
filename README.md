@@ -1,8 +1,9 @@
 # Inhibition of HDAC1
 
-Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325, and the model has been developed using Ersilias LazyQsar package (MorganBinaryClassifier)
+Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325 using two cut-offs, pIC50 7 (0.1uM) and 8 (10nM), and the model has been developed using Ersilias LazyQsar package (AUROCs of 0.89 and 0.91 over a 5-fold crossvalidation)
 
 This model was incorporated on 2023-09-27.
+
 
 ## Information
 ### Identifiers
