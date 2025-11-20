@@ -2,8 +2,7 @@
 
 Prediction of the inhibition of the Human Histone Deacetylase 1 to revert HIV latency. The dataset is composed of all available pIC50 values from ChEMBL target 325 using two cut-offs, pIC50 7 (0.1uM) and 8 (10nM), and the model has been developed using Ersilias LazyQsar package (AUROCs of 0.89 and 0.91 over a 5-fold crossvalidation)
 
-This model was incorporated on 2023-09-27.
-
+This model was incorporated on 2023-09-27.Last packaged on 2025-11-20.
 
 ## Information
 ### Identifiers
@@ -37,18 +36,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `Internal`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos2zmb](https://hub.docker.com/r/ersiliaos/eos2zmb)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `19`
 - **Environment Size (Mb):** `7610`
-- **Image Size (Mb):** `7226.49`
+- **Image Size (Mb):** `7527.14`
 
 **Computational Performance (seconds):**
-- 10 inputs: `35.96`
-- 100 inputs: `25.82`
-- 10000 inputs: `540.6`
+- 10 inputs: `65.74`
+- 100 inputs: `58.41`
+- 10000 inputs: `649.67`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
