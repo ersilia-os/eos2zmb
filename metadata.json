@@ -22,8 +22,7 @@
     "Output Consistency": "Fixed",
     "Interpretation": "Probability of inhibition of HDAC1 at cut-offs pIC50 7 (0.1uM) and 8 (10nM)",
     "Tag": [
-        "HIV",
-        "Human",
+        "Antiviral activity",
         "HDAC1"
     ],
     "Biomedical Area": [
