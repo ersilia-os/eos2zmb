@@ -1,6 +1,6 @@
 # Inhibition of HDAC1
 
-Predicts inhibition of histone deacetylase 1, pursued here for its role in reversing HIV latency, where reactivating dormant provirus is a prerequisite for clearing the reservoir. Training used all pIC50 measurements available for the corresponding ChEMBL target, with two thresholds applied so that moderate and strong inhibitors can be distinguished. Reported potencies span assay formats and laboratories, which limits how sharply the stricter cut-off can be drawn.
+Predicts inhibition of histone deacetylase 1, pursued here for its role in reversing HIV latency, where reactivating dormant provirus is a prerequisite for clearing the reservoir. Ersilia assembled every pIC50 measurement reported for ChEMBL target 325 and trained two binary classifiers with its own LazyQSAR package, one at a pIC50 of 7 and a stricter one at 8, which reached cross-validated AUROCs of 0.89 and 0.91. Potencies pooled across assay formats and laboratories blur the stricter cut-off.
 
 This model was incorporated on 2023-09-27.Last packaged on 2025-11-20.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-09-27.Last packaged on 2025-11-20.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of HDAC1 inhibition at pIC50 thresholds of 7 and 8.
+- **Interpretation:** Probability of HDAC1 inhibition at pIC50 cut-offs of 7 and 8, equivalent to 100 and 10 nM.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
