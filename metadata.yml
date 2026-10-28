@@ -1,0 +1,56 @@
+Identifier: eos2zmb
+Slug: hdac1-inhibition
+Status: Ready
+Title: Inhibition of HDAC1
+Description: Predicts inhibition of histone deacetylase 1, pursued here for its role
+  in reversing HIV latency, where reactivating dormant provirus is a prerequisite
+  for clearing the reservoir. Ersilia assembled every pIC50 measurement reported for
+  ChEMBL target 325 and trained two binary classifiers with its own LazyQSAR package,
+  one at a pIC50 of 7 and a stricter one at 8, which reached cross-validated AUROCs
+  of 0.89 and 0.91. Potencies pooled across assay formats and laboratories blur the
+  stricter cut-off.
+Deployment:
+- Local
+Source: Local
+Source Type: Internal
+Task: Annotation
+Subtask: Activity prediction
+Input:
+- Compound
+Input Dimension: 1
+Output:
+- Score
+Output Dimension: 2
+Output Consistency: Fixed
+Interpretation: Probability of HDAC1 inhibition at pIC50 cut-offs of 7 and 8, equivalent
+  to 100 and 10 nM.
+Tag:
+- Antiviral activity
+- HDAC1
+Biomedical Area:
+- Cancer
+- AIDS
+Target Organism:
+- Homo sapiens
+Publication Type: Other
+Publication Year: 2023
+Publication: https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL325/
+Source Code: https://github.com/ersilia-os/lazy-qsar
+License: GPL-3.0-or-later
+Contributor: GemmaTuron
+Incorporation Date: '2023-09-27'
+Last Packaging Date: '2025-11-20'
+Release: v1.0.0
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2zmb.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos2zmb
+Docker Architecture:
+- AMD64
+- ARM64
+Model Size: 19.0
+Environment Size: 7610.0
+Image Size: 7527.14
+Computational Performance 1: 65.74
+Computational Performance 2: 37.03
+Computational Performance 3: 58.41
+Computational Performance 4: 156.55
+Computational Performance 5: 649.67
