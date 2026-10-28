@@ -14,7 +14,7 @@ This model was incorporated on 2023-09-27.Last packaged on 2025-11-20.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Cancer`, `AIDS`
 - **Target Organism:** `Homo sapiens`
-- **Tags:** `HIV`, `Human`, `HDAC1`
+- **Tags:** `Antiviral activity`, `HDAC1`
 
 ### Input
 - **Input:** `Compound`
