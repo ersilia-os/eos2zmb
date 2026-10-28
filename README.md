@@ -2,7 +2,7 @@
 
 Predicts inhibition of histone deacetylase 1, pursued here for its role in reversing HIV latency, where reactivating dormant provirus is a prerequisite for clearing the reservoir. Ersilia assembled every pIC50 measurement reported for ChEMBL target 325 and trained two binary classifiers with its own LazyQSAR package, one at a pIC50 of 7 and a stricter one at 8, which reached cross-validated AUROCs of 0.89 and 0.91. Potencies pooled across assay formats and laboratories blur the stricter cut-off.
 
-This model was incorporated on 2023-09-27.Last packaged on 2025-11-20.
+This model was incorporated on 2023-09-27.Last packaged on 2026-10-28.
 
 ## Information
 ### Identifiers
@@ -42,12 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `19`
 - **Environment Size (Mb):** `7552`
-- **Image Size (Mb):** `7527.14`
+- **Image Size (Mb):** `7512.48`
 
 **Computational Performance (seconds):**
-- 10 inputs: `65.74`
-- 100 inputs: `58.41`
-- 10000 inputs: `649.67`
+- 10 inputs: `41.76`
+- 100 inputs: `57.05`
+- 10000 inputs: `742.28`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
