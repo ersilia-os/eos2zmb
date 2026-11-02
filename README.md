@@ -1,8 +1,9 @@
 # Inhibition of HDAC1
 
-Predicts inhibition of histone deacetylase 1, pursued here for its role in reversing HIV latency, where reactivating dormant provirus is a prerequisite for clearing the reservoir. Ersilia assembled every pIC50 measurement reported for ChEMBL target 325 and trained two binary classifiers with its own LazyQSAR package, one at a pIC50 of 7 and a stricter one at 8, which reached cross-validated AUROCs of 0.89 and 0.91. Potencies pooled across assay formats and laboratories blur the stricter cut-off.
+Predicts inhibition of histone deacetylase 1, pursued here for its role in reversing HIV latency, where reactivating dormant provirus is a prerequisite for clearing the reservoir. Ersilia assembled every pIC50 measurement reported for ChEMBL target 325 and trained two binary classifiers with its own LazyQSAR package, one at a pIC50 of 7 and a stricter one at 8, which reached cross-validated AUROCs of 0.93 and 0.94. Potencies pooled across assay formats and laboratories blur the stricter cut-off.
 
-This model was incorporated on 2023-09-27.Last packaged on 2026-10-28.
+This model was incorporated on 2023-09-27.
+Last packaged on 2026-10-28.
 
 ## Information
 ### Identifiers
@@ -23,13 +24,13 @@ This model was incorporated on 2023-09-27.Last packaged on 2026-10-28.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of HDAC1 inhibition at pIC50 cut-offs of 7 and 8, equivalent to 100 and 10 nM.
+- **Interpretation:** Rank scores of HDAC1 inhibition at pIC50 cut-offs of 7 and 8 (100 and 10 nM), calibrated against the Ersilia reference library of 50K compounds, where 0.65 beats 99% of it.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| hdac1_pic50_7 | float | high | Classification score of HDAC1 inhibition based on a pIC50 cutoff of 7 |
-| hdac1_pic50_8 | float | high | Classification score of HDAC1 inhibition based on a pIC50 cutoff of 8 |
+| hdac1_pic50_7_rank | float | high | Rank score of how likely the compound is to inhibit HDAC1 with a pIC50 of at least 7 (IC50 of 100 nM or lower). Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| hdac1_pic50_8_rank | float | high | Rank score of how likely the compound is to inhibit HDAC1 with a pIC50 of at least 8 (IC50 of 10 nM or lower). Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
