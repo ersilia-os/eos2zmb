@@ -47,8 +47,8 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos2zmb
 Docker Architecture:
   - AMD64
   - ARM64
-Model Size: 19.0
-Environment Size: 7552.0
+Model Size: 76.0
+Environment Size: 7467.0
 Image Size: 7512.48
 Computational Performance 1: 41.76
 Computational Performance 2: 53.55
