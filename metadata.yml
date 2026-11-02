@@ -22,8 +22,8 @@ Output:
   - Score
 Output Dimension: 2
 Output Consistency: Fixed
-Interpretation: Rank scores of HDAC1 inhibition at pIC50 cut-offs of 7 and 8
-  (100 and 10 nM), calibrated against the Ersilia reference library of 50K
+Interpretation: Rank scores of HDAC1 inhibition at pIC50 cut-offs of 7 and 8 
+  (100 and 10 nM), calibrated against the Ersilia reference library of 50K 
   compounds, where 0.65 beats 99% of it.
 Tag:
   - Antiviral activity
