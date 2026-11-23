@@ -48,8 +48,8 @@ Docker Architecture:
   - AMD64
   - ARM64
 Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos2zmb_v2.sif
-Model Size: 76.0
-Environment Size: 7467.0
+Model Size: 86.0
+Environment Size: 6954.0
 Image Size: 7121.78
 Computational Performance 1: 42.56
 Computational Performance 2: 32.81
